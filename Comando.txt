@@ -1,0 +1,4 @@
+php artisan make:model nameModel -mcf
+
+Ejemplo:
+php artisan make:model Subjects -mcf
