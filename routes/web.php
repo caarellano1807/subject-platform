@@ -28,5 +28,4 @@ Route::group(['prefix' => 'sch'], function() {
     Route::post('/add-students', ['App\Http\Controllers\Modules\School\SchStudentsController','store'])->name('student.create');
     Route::get('/form-subjects', ['App\Http\Controllers\Modules\School\SchSubjectsController','index']);
     Route::post('/add-subjects', ['App\Http\Controllers\Modules\School\SchSubjectsController','store'])->name('subject.create');
-    Route::resource('/subjects-students', 'App\Http\Controllers\Modules\School\SchSubjectStudentsController');
 });

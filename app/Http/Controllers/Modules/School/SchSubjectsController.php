@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Modules\School;
 use Illuminate\Http\Request;
 use App\Models\Modules\School\SchSubjects;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class SchSubjectsController extends Controller
 {

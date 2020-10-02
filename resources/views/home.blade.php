@@ -3,16 +3,16 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Plataforma Estudiantil</h1>
 @stop
 
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h1>Título</h1>
+            <h1>Bienvenido</h1>
         </div>
         <div class="card-body">
-            <p>Descripción</p>
+            <p>Esta sección es informativa, puedes registrar estudiantes y asignaturas.</p>
         </div>
     </div>
 @stop

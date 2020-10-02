@@ -25,7 +25,16 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">Inscribir asignatura</label>
-                    <input type="text" name="subject_id" class="form-control" placeholder="Ingrese teléfono">
+                    <select name="subject_id" id="subject_id" class="form-control">
+                        @foreach ($subjects as $item)
+                            <option value="{{$item->id}}">{{$item->name}}</option>
+                        @endforeach
+                    </select>
+                    {{-- <select name="subject_id" id="subject_id" class="form-control">
+                        @foreach($itemlist as $item)
+                          <option value="{{ $item->id }}">{{ $item->name }}</option>
+                        @endforeach
+                      </select> --}}
                 </div>
                 <button type="submit" class="btn btn-primary">Registrar</button>
             </form>

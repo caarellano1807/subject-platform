@@ -5,13 +5,15 @@ namespace App\Http\Controllers\Modules\School;
 use Illuminate\Http\Request;
 use App\Models\Modules\School\SchStudents;
 use App\Http\Controllers\Controller;
+use App\Models\Modules\School\SchSubjects;
 use App\Models\Modules\School\SchSubjectStudents;
 
 class SchStudentsController extends Controller
 {
     public function index()
     {
-        return view('school/add-student');
+        $subjects = SchSubjects::get();
+        return view('school/add-student', compact('subjects'));
     }
 
     public function store(Request $request)
